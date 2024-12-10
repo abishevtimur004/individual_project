@@ -1,0 +1,394 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+}
+hr {
+  color: #ddd;
+}
+
+.container {
+  max-width: 1170px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.top-header {
+  font-family: 'Poppins';
+  background-color: #2b1b1b;
+  color: #fff;
+  padding: 10px 20px;
+  font-size: 14px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.top-header__promo {
+  font-size: 14px;
+}
+
+.top-header__language {
+  display: flex;
+  align-items:center;
+  gap: 5px;
+  justify-content: space-between;
+  margin-left: 241px;
+  font-size: 14px;
+}
+
+.top-header__item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 445px;
+}
+
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 40px;
+  padding: 0;
+  background-color: #fff; 
+}
+
+.header__logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+}
+
+.header__nav {
+  display: flex;
+  margin-left: 190px;
+  gap: 48px;
+}
+
+.header__nav a {
+  text-decoration: none;
+  color: #333;
+  font-size: 16px;
+}
+
+.header__nav a:hover {
+  color: #ff3d00;
+}
+
+.header__search-icon {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 5px;
+  padding: 7px;
+}
+.header__search {
+  display: flex;
+  align-items: center;
+  width: 243px;
+  height: 38px;
+}
+
+.header-nav__btn-search {
+  display: flex;
+  align-items: center;
+  border-radius: 5px;
+  background-color: #F5F5F5;
+}
+
+.search-input {
+  margin-left: 20px;
+  flex: 1;
+  border: none;
+  outline: none;
+  background-color: #F5F5F5;
+  font-weight: 400;
+  font-size: 12px;
+  color: #000000;
+}
+
+.search-input::placeholder {
+  color: #aaa;
+}
+
+.search-button {
+  background: none;
+  border: none;
+  padding: 0;
+  margin-right: 12px;
+  cursor: pointer;
+}
+
+.header__icons {
+  display: flex;
+  gap: 16px;
+  margin-left: 24px;
+  align-items: center;
+}
+
+.header__icons svg {
+  height: 32px;
+  width: 32px;
+  cursor: pointer;
+}
+
+.intro-item {
+  display: grid;
+  grid-template-columns: 217px 1px 1fr;
+  margin-top: 56px;
+
+}
+
+.bottom-line {
+  background-color: #ccc;
+  margin-left: 16px;
+  width: 100vw;
+  position: relative;
+}
+
+.bottom-line::before {
+  content: '';
+  position: absolute;
+  top: 16px;
+  left: -220px;
+  right: 0;
+  height: 1px;
+  background-color: #ccc;
+}
+
+.right-line {
+  background-color: #ccc;
+  margin-left: 16px;
+  width: 1px;
+  height: 100%;
+  position: relative;
+}
+
+.right-line::before {
+  content: '';
+  position: absolute;
+  top: -40px;
+  left: 0;
+  right: 0;
+  height: 40px;
+  background-color: #ccc;
+}
+
+.sidebar {
+  width: 250px;
+  background-color: #fff;
+  padding: 0;
+}
+
+.sidebar__menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar__menu-item {
+  margin-bottom: 16px;
+}
+
+.sidebar__menu-item a {
+  text-decoration: none;
+  color: #333;
+  font-size: 16px;
+}
+
+.sidebar__menu-item a:hover {
+  color: #ff3d00;
+}
+
+.content-wrapper {
+  display: flex;
+  margin-left: 45px; 
+
+}
+
+.main-banner {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  background-color: #000;
+}
+
+.main-banner__content {
+  max-width: 50%;
+}
+
+.main-banner__title {
+  font-size: 32px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.main-banner__subtitle {
+  font-size: 18px;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.main-banner__cta {
+  display: inline-block;
+  padding: 10px 20px;
+  background: #ff3d00;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.main-banner__cta:hover {
+  background: #e63e00;
+}
+
+.main-banner__image {
+  max-width: 40%;
+}
+
+.main-banner__image img {
+  width: 100%;
+  height: auto;
+}
+
+.dots {
+  display: flex;
+  gap: 5px;
+  margin-top: 15px;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  background: #ddd;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.dot--active {
+  background: #ff3d00;
+}
+
+
+
+
+
+/* poppins-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/poppins-v21-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* poppins-500 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  src: url('../fonts/poppins-v21-latin-500.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* poppins-600 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  src: url('../fonts/poppins-v21-latin-600.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* poppins-700 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../fonts/poppins-v21-latin-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* poppins-800 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 800;
+  src: url('../fonts/poppins-v21-latin-800.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* inter-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/inter-v18-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* inter-500 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  src: url('../fonts/inter-v18-latin-500.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* inter-600 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  src: url('../fonts/inter-v18-latin-600.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* inter-700 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../fonts/inter-v18-latin-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* inter-800 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 800;
+  src: url('../fonts/inter-v18-latin-800.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* inter-900 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 900;
+  src: url('../fonts/inter-v18-latin-900.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
